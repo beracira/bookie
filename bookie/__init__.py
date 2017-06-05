@@ -1,1 +1,1 @@
-# from .bookie import app
+from .bookie import app
