@@ -29,6 +29,7 @@ SECRET_KEY = 'development key'
 app = Flask('bookie')
 app.config.from_object(__name__)
 app.config.from_envvar('BOOKIE_SETTINGS', silent=True)
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////tmp/test.db'
 
 
 def get_db():
